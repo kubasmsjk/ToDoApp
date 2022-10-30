@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MainActivity</string>
+    <string name="name_hint">Wpisz nazwę zadania</string>
+    <string name="name_label">Nazwa</string>
+    <string name="details_label">Szczegóły</string>
+    <string name="done_label">Wykonane</string>
+    <string name="task_item_name">Task title</string>
+    <string name="task_item_date">Task date</string>
+</resources>
