@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="purpleText">
+        <item name="android:textColor">#ce93d8</item>
+    </style>
+</resources>

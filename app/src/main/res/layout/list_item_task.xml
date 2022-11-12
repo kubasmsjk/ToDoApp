@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_margin="20dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
 
-    <TextView
-        style="?android:listSeparatorTextViewStyle"
-        android:id="@+id/task_item_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/task_item_name" />
-    <TextView
-        style="?android:listSeparatorTextViewStyle"
-        android:id="@+id/task_item_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/task_item_date" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
 
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_item_name"
+            style="?android:listSeparatorTextViewStyle"
+            android:singleLine="true"
+            android:layout_height="25dp"
+            android:layout_width="match_parent"
+            android:text="@string/task_item_name" />
+
+        <TextView
+            android:id="@+id/task_item_date"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/task_item_date" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/task_item_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        tools:srcCompat="@drawable/ic_house"
+        android:padding="@dimen/task_item_padding"/>
 </LinearLayout>

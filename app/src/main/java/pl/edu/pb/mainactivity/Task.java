@@ -1,5 +1,7 @@
 package pl.edu.pb.mainactivity;
 
+import android.widget.CheckBox;
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -8,10 +10,29 @@ public class Task {
     private String name;
     private Date date;
     private boolean done;
+    private Category category;
+    private CheckBox checkBox;
 
     public Task() {
         id = UUID.randomUUID();
         date = new Date();
+        category = Category.HOME;
+    }
+
+    public CheckBox getCheckBox() {
+        return checkBox;
+    }
+
+    public void setCheckBox(CheckBox checkBox) {
+        this.checkBox = checkBox;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     public UUID getId() {
